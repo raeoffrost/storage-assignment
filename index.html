@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment 2</title>
+</head>
+<!-- Time-based greeting with saved username -->
+<div class="container mt-5 greeting">
+    <h1 data-source="name-storage"><span id="greet">Welcome </span><span id="uname">User</span>!</h1>
+</div>
+
+<div class="container card mt-5">
+    <div class="card-body">
+        <!-- form for name input -->
+        <form class="mx-auto">
+            <h3 class="cart-title">Choose a username</h3>
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="Name" class="form-control" placeholder="Pick a username" aria-placeholder="Pick a username" aria-labelledby="name" aria-required="true" required>
+            <!-- save name and clear name buttons-->
+            <div class="mt-3">
+                <input class="btn save-btn m-1" type="submit" value="Save Name" aria-label="Save Name" id="save-btn" onclick="saveName()">
+                <input class="btn clear-btn m-1" type="reset" value="Clear Name" aria-label="Clear Name" id="clear-btn" onclick="clearName()">
+            </div>
+        </form>
+        <!-- Display current saved name -->
+        <div class="name-display">
+            <p class="card-text">Your username is: <span id="display-name">Undecided</span></p>
+        </div>   
+    </div>
+</div>
+<!-- Reflection -->
+<div class="container mt-5 text-start w-50">
+    <h4>Reflection</h4>
+    <p>This topic was actually the first truly <strong>new</strong> topic that we have covered for me which made the assigned task to teach ourselves that much more challenging. In the end I was able to work through it with the help of W3Schools.</p>
+    <p>Upon reflection, the topic itself is not overly complex but I found the documentation to be inconsistent wherever I went which led to confusion as to what was the "right" way to do things.</p>
+    <p>I still do not fully understand the purpose of using the Web Storage API over a web cookie. I’d like to learn more about when this method should be chosen over a simple cookie.</p>
+    <p>I’ve learned that local storage and session storage are a resource that can be utilized by a developer. I now also know how to set an item in local storage based on form values, retrieve the value and clear it using event listeners. I brushed up on my knowledge of working with the user's time/date, particularly what functions are built into Javascript to handle this. I’ve worked a bit with event listeners in the past but not enough to feel confident so it was good to get some practice in those. I particularly found it useful to review connecting event listeners to buttons.</p>
+</div>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

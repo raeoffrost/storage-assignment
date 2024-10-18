@@ -1,0 +1,93 @@
+/* Variables */
+:root{
+/* color */
+--primary: #3d7c99;
+--prime-hover: #4f8daa;
+--secondary: #a21447;
+--second-hover: #c72862;
+/* style */
+--shadow-on: box-shadow: 0px 0px 3px 2px #000000b0;
+--shadow-off: box-shadow: 0px 0px 0px 0px #00000081;
+--border-off: 0px;
+
+}
+
+/* Page */
+body{
+    text-align: center;
+}
+p, h4{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;  
+}
+h1, h2, h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Buttons */
+
+.btn{
+    box-shadow: var(--shadow-off); 
+    border: var(--border-off);
+}
+.btn:hover{
+    box-shadow: var(--shadow-on);
+}
+.btn:active{
+    box-shadow: var(--shadow-off);
+    border: var(--border-off);
+}
+.save-btn {
+    background-color: var(--primary);
+}
+.save-btn:hover {
+    background-color:var(--prime-hover); 
+}
+.save-btn:active {
+    background-color: var(--prime-hover);   
+}
+.clear-btn {
+    background-color: var(--secondary);
+}
+.clear-btn:hover {
+    background-color: var(--second-hover); 
+}
+.clear-btn:active {
+    background-color: var(--second-hover); 
+}
+
+/* Username */
+.card-body{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.name-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--second-hover);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--secondary);
+    text-align: center;
+    flex-grow: 1;
+}
+.name-display .card-text {
+    font-weight: 600;
+}
+#display-name {
+    text-decoration: underline #19f019 2px;
+    padding-bottom: 5px;
+}
+/* form */
+form{
+    text-align: left;
+    max-width: 800px;
+    flex-grow: 2;
+}
